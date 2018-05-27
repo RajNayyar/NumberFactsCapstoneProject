@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32444CF020A98D1E00A7825C /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32444CEF20A98D1E00A7825C /* tableViewController.swift */; };
+		32444CF220A98D3600A7825C /* tableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32444CF120A98D3600A7825C /* tableViewCell.swift */; };
+		3257F1F820A6F9B800E1E91A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3257F1F720A6F9B800E1E91A /* AppDelegate.swift */; };
+		3257F1FA20A6F9B800E1E91A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3257F1F920A6F9B800E1E91A /* ViewController.swift */; };
+		3257F1FD20A6F9B800E1E91A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3257F1FB20A6F9B800E1E91A /* Main.storyboard */; };
+		3257F20020A6F9B800E1E91A /* NUMBERS_GAME.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3257F1FE20A6F9B800E1E91A /* NUMBERS_GAME.xcdatamodeld */; };
+		3257F20220A6F9BB00E1E91A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3257F20120A6F9BB00E1E91A /* Assets.xcassets */; };
+		3257F20520A6F9BB00E1E91A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3257F20320A6F9BB00E1E91A /* LaunchScreen.storyboard */; };
+		329B6AD920A881050024DEA4 /* factDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B6AD820A881050024DEA4 /* factDisplayViewController.swift */; };
+		32DB51CA20BAD7CA00EA1C09 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB51B420BAD7CA00EA1C09 /* IQTextView.swift */; };
+		32DB51CB20BAD7CA00EA1C09 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB51B620BAD7CA00EA1C09 /* IQPreviousNextView.swift */; };
+		32DB51CC20BAD7CA00EA1C09 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB51B720BAD7CA00EA1C09 /* IQTitleBarButtonItem.swift */; };
+		32DB51CD20BAD7CA00EA1C09 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB51B820BAD7CA00EA1C09 /* IQBarButtonItem.swift */; };
+		32DB51CE20BAD7CA00EA1C09 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB51B920BAD7CA00EA1C09 /* IQToolbar.swift */; };
+		32DB51CF20BAD7CA00EA1C09 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB51BA20BAD7CA00EA1C09 /* IQUIView+IQKeyboardToolbar.swift */; };
+		32DB51D020BAD7CA00EA1C09 /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB51BB20BAD7CA00EA1C09 /* IQInvocation.swift */; };
+		32DB51D120BAD7CA00EA1C09 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB51BD20BAD7CA00EA1C09 /* IQKeyboardManagerConstantsInternal.swift */; };
+		32DB51D220BAD7CA00EA1C09 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB51BE20BAD7CA00EA1C09 /* IQKeyboardManagerConstants.swift */; };
+		32DB51D320BAD7CA00EA1C09 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32DB51C020BAD7CA00EA1C09 /* IQKeyboardManager.bundle */; };
+		32DB51D420BAD7CA00EA1C09 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB51C120BAD7CA00EA1C09 /* IQKeyboardReturnKeyHandler.swift */; };
+		32DB51D520BAD7CA00EA1C09 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB51C220BAD7CA00EA1C09 /* IQKeyboardManager.swift */; };
+		32DB51D620BAD7CA00EA1C09 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB51C520BAD7CA00EA1C09 /* IQUIScrollView+Additions.swift */; };
+		32DB51D720BAD7CA00EA1C09 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB51C620BAD7CA00EA1C09 /* IQUIViewController+Additions.swift */; };
+		32DB51D820BAD7CA00EA1C09 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB51C720BAD7CA00EA1C09 /* IQUITextFieldView+Additions.swift */; };
+		32DB51D920BAD7CA00EA1C09 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB51C820BAD7CA00EA1C09 /* IQUIView+Hierarchy.swift */; };
+		32DB51DA20BAD7CA00EA1C09 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB51C920BAD7CA00EA1C09 /* IQNSArray+Sort.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		32444CEF20A98D1E00A7825C /* tableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
+		32444CF120A98D3600A7825C /* tableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewCell.swift; sourceTree = "<group>"; };
+		3257F1F420A6F9B800E1E91A /* NUMBERS GAME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NUMBERS GAME.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3257F1F720A6F9B800E1E91A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3257F1F920A6F9B800E1E91A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3257F1FC20A6F9B800E1E91A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3257F1FF20A6F9B800E1E91A /* NUMBERS_GAME.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NUMBERS_GAME.xcdatamodel; sourceTree = "<group>"; };
+		3257F20120A6F9BB00E1E91A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3257F20420A6F9BB00E1E91A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3257F20620A6F9BB00E1E91A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		329B6AD820A881050024DEA4 /* factDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = factDisplayViewController.swift; sourceTree = "<group>"; };
+		32DB51B420BAD7CA00EA1C09 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		32DB51B620BAD7CA00EA1C09 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
+		32DB51B720BAD7CA00EA1C09 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		32DB51B820BAD7CA00EA1C09 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		32DB51B920BAD7CA00EA1C09 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		32DB51BA20BAD7CA00EA1C09 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		32DB51BB20BAD7CA00EA1C09 /* IQInvocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQInvocation.swift; sourceTree = "<group>"; };
+		32DB51BD20BAD7CA00EA1C09 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		32DB51BE20BAD7CA00EA1C09 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		32DB51C020BAD7CA00EA1C09 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		32DB51C120BAD7CA00EA1C09 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		32DB51C220BAD7CA00EA1C09 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		32DB51C320BAD7CA00EA1C09 /* IQKeyboardManagerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerSwift.h; sourceTree = "<group>"; };
+		32DB51C520BAD7CA00EA1C09 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		32DB51C620BAD7CA00EA1C09 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		32DB51C720BAD7CA00EA1C09 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		32DB51C820BAD7CA00EA1C09 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		32DB51C920BAD7CA00EA1C09 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3257F1F120A6F9B800E1E91A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3257F1EB20A6F9B800E1E91A = {
+			isa = PBXGroup;
+			children = (
+				3257F1F620A6F9B800E1E91A /* NUMBERS GAME */,
+				3257F1F520A6F9B800E1E91A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3257F1F520A6F9B800E1E91A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3257F1F420A6F9B800E1E91A /* NUMBERS GAME.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3257F1F620A6F9B800E1E91A /* NUMBERS GAME */ = {
+			isa = PBXGroup;
+			children = (
+				3257F1F720A6F9B800E1E91A /* AppDelegate.swift */,
+				3257F1F920A6F9B800E1E91A /* ViewController.swift */,
+				3257F1FB20A6F9B800E1E91A /* Main.storyboard */,
+				3257F20120A6F9BB00E1E91A /* Assets.xcassets */,
+				3257F20320A6F9BB00E1E91A /* LaunchScreen.storyboard */,
+				3257F20620A6F9BB00E1E91A /* Info.plist */,
+				3257F1FE20A6F9B800E1E91A /* NUMBERS_GAME.xcdatamodeld */,
+				329B6AD820A881050024DEA4 /* factDisplayViewController.swift */,
+				32444CEF20A98D1E00A7825C /* tableViewController.swift */,
+				32444CF120A98D3600A7825C /* tableViewCell.swift */,
+				32DB51B220BAD7C900EA1C09 /* IQKeyboardManagerSwift */,
+			);
+			path = "NUMBERS GAME";
+			sourceTree = "<group>";
+		};
+		32DB51B220BAD7C900EA1C09 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				32DB51B320BAD7CA00EA1C09 /* IQTextView */,
+				32DB51B520BAD7CA00EA1C09 /* IQToolbar */,
+				32DB51BC20BAD7CA00EA1C09 /* Constants */,
+				32DB51BF20BAD7CA00EA1C09 /* Resources */,
+				32DB51C120BAD7CA00EA1C09 /* IQKeyboardReturnKeyHandler.swift */,
+				32DB51C220BAD7CA00EA1C09 /* IQKeyboardManager.swift */,
+				32DB51C320BAD7CA00EA1C09 /* IQKeyboardManagerSwift.h */,
+				32DB51C420BAD7CA00EA1C09 /* Categories */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		32DB51B320BAD7CA00EA1C09 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				32DB51B420BAD7CA00EA1C09 /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		32DB51B520BAD7CA00EA1C09 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				32DB51B620BAD7CA00EA1C09 /* IQPreviousNextView.swift */,
+				32DB51B720BAD7CA00EA1C09 /* IQTitleBarButtonItem.swift */,
+				32DB51B820BAD7CA00EA1C09 /* IQBarButtonItem.swift */,
+				32DB51B920BAD7CA00EA1C09 /* IQToolbar.swift */,
+				32DB51BA20BAD7CA00EA1C09 /* IQUIView+IQKeyboardToolbar.swift */,
+				32DB51BB20BAD7CA00EA1C09 /* IQInvocation.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		32DB51BC20BAD7CA00EA1C09 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				32DB51BD20BAD7CA00EA1C09 /* IQKeyboardManagerConstantsInternal.swift */,
+				32DB51BE20BAD7CA00EA1C09 /* IQKeyboardManagerConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		32DB51BF20BAD7CA00EA1C09 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32DB51C020BAD7CA00EA1C09 /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		32DB51C420BAD7CA00EA1C09 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				32DB51C520BAD7CA00EA1C09 /* IQUIScrollView+Additions.swift */,
+				32DB51C620BAD7CA00EA1C09 /* IQUIViewController+Additions.swift */,
+				32DB51C720BAD7CA00EA1C09 /* IQUITextFieldView+Additions.swift */,
+				32DB51C820BAD7CA00EA1C09 /* IQUIView+Hierarchy.swift */,
+				32DB51C920BAD7CA00EA1C09 /* IQNSArray+Sort.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3257F1F320A6F9B800E1E91A /* NUMBERS GAME */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3257F20920A6F9BB00E1E91A /* Build configuration list for PBXNativeTarget "NUMBERS GAME" */;
+			buildPhases = (
+				3257F1F020A6F9B800E1E91A /* Sources */,
+				3257F1F120A6F9B800E1E91A /* Frameworks */,
+				3257F1F220A6F9B800E1E91A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NUMBERS GAME";
+			productName = "NUMBERS GAME";
+			productReference = 3257F1F420A6F9B800E1E91A /* NUMBERS GAME.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3257F1EC20A6F9B800E1E91A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Rajpreet;
+				TargetAttributes = {
+					3257F1F320A6F9B800E1E91A = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 3257F1EF20A6F9B800E1E91A /* Build configuration list for PBXProject "NUMBERS GAME" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3257F1EB20A6F9B800E1E91A;
+			productRefGroup = 3257F1F520A6F9B800E1E91A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3257F1F320A6F9B800E1E91A /* NUMBERS GAME */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3257F1F220A6F9B800E1E91A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3257F20520A6F9BB00E1E91A /* LaunchScreen.storyboard in Resources */,
+				3257F20220A6F9BB00E1E91A /* Assets.xcassets in Resources */,
+				32DB51D320BAD7CA00EA1C09 /* IQKeyboardManager.bundle in Resources */,
+				3257F1FD20A6F9B800E1E91A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3257F1F020A6F9B800E1E91A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32DB51CC20BAD7CA00EA1C09 /* IQTitleBarButtonItem.swift in Sources */,
+				32DB51D120BAD7CA00EA1C09 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				3257F1FA20A6F9B800E1E91A /* ViewController.swift in Sources */,
+				329B6AD920A881050024DEA4 /* factDisplayViewController.swift in Sources */,
+				32DB51D920BAD7CA00EA1C09 /* IQUIView+Hierarchy.swift in Sources */,
+				32444CF220A98D3600A7825C /* tableViewCell.swift in Sources */,
+				32DB51CD20BAD7CA00EA1C09 /* IQBarButtonItem.swift in Sources */,
+				32444CF020A98D1E00A7825C /* tableViewController.swift in Sources */,
+				32DB51CF20BAD7CA00EA1C09 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				32DB51CE20BAD7CA00EA1C09 /* IQToolbar.swift in Sources */,
+				32DB51CB20BAD7CA00EA1C09 /* IQPreviousNextView.swift in Sources */,
+				32DB51D820BAD7CA00EA1C09 /* IQUITextFieldView+Additions.swift in Sources */,
+				32DB51D420BAD7CA00EA1C09 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				32DB51D520BAD7CA00EA1C09 /* IQKeyboardManager.swift in Sources */,
+				32DB51D720BAD7CA00EA1C09 /* IQUIViewController+Additions.swift in Sources */,
+				32DB51D020BAD7CA00EA1C09 /* IQInvocation.swift in Sources */,
+				32DB51DA20BAD7CA00EA1C09 /* IQNSArray+Sort.swift in Sources */,
+				3257F1F820A6F9B800E1E91A /* AppDelegate.swift in Sources */,
+				3257F20020A6F9B800E1E91A /* NUMBERS_GAME.xcdatamodeld in Sources */,
+				32DB51D220BAD7CA00EA1C09 /* IQKeyboardManagerConstants.swift in Sources */,
+				32DB51CA20BAD7CA00EA1C09 /* IQTextView.swift in Sources */,
+				32DB51D620BAD7CA00EA1C09 /* IQUIScrollView+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3257F1FB20A6F9B800E1E91A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3257F1FC20A6F9B800E1E91A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3257F20320A6F9BB00E1E91A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3257F20420A6F9BB00E1E91A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3257F20720A6F9BB00E1E91A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3257F20820A6F9BB00E1E91A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3257F20A20A6F9BB00E1E91A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XUGG64T5F3;
+				INFOPLIST_FILE = "NUMBERS GAME/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NUMBERS-GAME";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3257F20B20A6F9BB00E1E91A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XUGG64T5F3;
+				INFOPLIST_FILE = "NUMBERS GAME/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NUMBERS-GAME";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3257F1EF20A6F9B800E1E91A /* Build configuration list for PBXProject "NUMBERS GAME" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3257F20720A6F9BB00E1E91A /* Debug */,
+				3257F20820A6F9BB00E1E91A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3257F20920A6F9BB00E1E91A /* Build configuration list for PBXNativeTarget "NUMBERS GAME" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3257F20A20A6F9BB00E1E91A /* Debug */,
+				3257F20B20A6F9BB00E1E91A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3257F1FE20A6F9B800E1E91A /* NUMBERS_GAME.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3257F1FF20A6F9B800E1E91A /* NUMBERS_GAME.xcdatamodel */,
+			);
+			currentVersion = 3257F1FF20A6F9B800E1E91A /* NUMBERS_GAME.xcdatamodel */;
+			path = NUMBERS_GAME.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3257F1EC20A6F9B800E1E91A /* Project object */;
+}
