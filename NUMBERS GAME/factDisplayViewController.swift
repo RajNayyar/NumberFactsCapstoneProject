@@ -65,7 +65,7 @@ class factDisplayViewController: UIViewController {
                         if(flag==0)
                         {
                             self.save(name: fact)
-                            flag = 1
+                            flag = 0
                         }
                         print(self.facts)
                         print("gap gap")
@@ -81,6 +81,9 @@ class factDisplayViewController: UIViewController {
         obj.parseJSON(index: hub, completion: {resultArray, error, fact in
             
             if error != nil{
+                let alert = UIAlertController(title: "Alert", message: "Network Error", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
                 completion(nil,error)
                 return
             }

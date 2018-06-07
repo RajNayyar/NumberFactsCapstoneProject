@@ -1,9 +1,8 @@
 import Foundation
 import UIKit
 
-class Network: UIViewController{
-   
-    var url = URL(string: "url here")
+class Network{
+    
 
     func parseJSON(index: String, completion: @escaping (_ tableArray:[String]?,_ error:String?,_ fact:String?) -> ()) {
 
@@ -23,9 +22,7 @@ class Network: UIViewController{
             print("working 1")
             guard error == nil else {
               flag = 1
-                let alert = UIAlertController(title: "Alert", message: "Network Error", preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
+
                 return
             }
             

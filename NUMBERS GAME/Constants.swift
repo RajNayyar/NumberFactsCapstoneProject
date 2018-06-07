@@ -12,3 +12,4 @@ var realType : String = "Hello"
 var fact : String = "Hello"
  var result:[String] = []
  var flag = 0
+var url = URL(string: "url here")
