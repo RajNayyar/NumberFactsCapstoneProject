@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uAp-eB-Jnz">
-                                <rect key="frame" x="122" y="350.5" width="131" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Number" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="5" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uAp-eB-Jnz">
+                                <rect key="frame" x="65" y="351" width="244" height="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="go"/>
@@ -28,7 +28,7 @@
                                 </connections>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKR-td-EGG">
-                                <rect key="frame" x="52.5" y="387.5" width="270" height="90"/>
+                                <rect key="frame" x="52.5" y="388.5" width="270" height="90"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bdq-g1-oau">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
@@ -96,11 +96,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.31971019509999998" green="0.69409149889999999" blue="0.88630431890000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uAp-eB-Jnz" secondAttribute="trailing" constant="122" id="61j-wh-bLb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uAp-eB-Jnz" secondAttribute="trailing" constant="66" id="61j-wh-bLb"/>
                             <constraint firstItem="uAp-eB-Jnz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="NoE-xY-E8Z"/>
                             <constraint firstItem="pKR-td-EGG" firstAttribute="top" secondItem="uAp-eB-Jnz" secondAttribute="bottom" constant="7.5" id="Xqn-5b-5sq"/>
                             <constraint firstItem="pKR-td-EGG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="u0Y-n3-054"/>
-                            <constraint firstItem="uAp-eB-Jnz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="ymo-EG-Emj"/>
+                            <constraint firstItem="uAp-eB-Jnz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="ymo-EG-Emj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

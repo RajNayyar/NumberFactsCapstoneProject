@@ -64,6 +64,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         flag = 3
         let factDisplayViewController = self.storyboard?.instantiateViewController(withIdentifier: "factDisplayViewController") as! factDisplayViewController
         factDisplayViewController.type = "random"
+        realType = factDisplayViewController.type
         factDisplayViewController.hub = numberField.text!
         self.navigationController?.pushViewController(factDisplayViewController, animated: true)
     }
@@ -75,6 +76,7 @@ class ViewController: UIViewController, UITextViewDelegate {
             let sg = segue.destination as! factDisplayViewController
             sg.hub = numberField.text!
             sg.type = "trivia"
+            realType = sg.type
             flag = 0
         }
         else if(flag==2)
@@ -82,6 +84,7 @@ class ViewController: UIViewController, UITextViewDelegate {
             let sg = segue.destination as! factDisplayViewController
             sg.hub = numberField.text!
             sg.type = "math"
+            realType = sg.type
             flag = 0
         }
     }

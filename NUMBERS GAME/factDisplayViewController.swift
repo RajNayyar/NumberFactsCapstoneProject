@@ -14,14 +14,14 @@ class factDisplayViewController: UIViewController {
     @IBOutlet weak var inid: UIActivityIndicatorView!
     @IBOutlet weak var factLabel: UILabel!
     
+    let obj = Network()
     
-    var fact = String()
-   var result:[String] = []
+  
      var facts: [NSManagedObject] = []
     var hub = String()
     var type = String()
         var url = URL(string: "")
-    var flag = 0
+   
     
     override func viewDidLoad() {
          self.networkingAPI()
@@ -61,16 +61,15 @@ class factDisplayViewController: UIViewController {
                 else{
                     DispatchQueue.main.async {
                         self.inid.isHidden = true
-                        self.factLabel.text = self.fact
-                        if(self.flag==0)
+                        self.factLabel.text = fact
+                        if(flag==0)
                         {
-                            self.save(name: self.fact)
-                            self.flag = 0
+                            self.save(name: fact)
+                            flag = 1
                         }
                         print(self.facts)
                         print("gap gap")
                     }
-                    
                 }
             }
     }
@@ -79,11 +78,13 @@ class factDisplayViewController: UIViewController {
     func get_data(_ completion: @escaping (_ done: [String]? , _ error: String?) -> Void){
         
         
-        parseJSON(index: hub, completion: {resultArray, error, fact in
+        obj.parseJSON(index: hub, completion: {resultArray, error, fact in
+            
             if error != nil{
-                completion(nil,error) ///////
+                completion(nil,error)
                 return
             }
+
             else{
                 DispatchQueue.main.async {
                     print("DONE")
@@ -93,59 +94,6 @@ class factDisplayViewController: UIViewController {
         })
     }
     
-    
-    
-    
-    
-    func parseJSON(index: String, completion: @escaping (_ tableArray:[String]?,_ error:String?,_ fact:String?) -> ()) {
-        
-        if(type == "math")
-        {
-             url = URL(string: "http://numbersapi.com/\(index)/math?json")
-        }
-        else if(type == "trivia")
-        {
-            url = URL(string: "http://numbersapi.com/\(index)?json")
-        }
-        else if(type == "random")
-        {
-             url = URL(string: "http://numbersapi.com/random?json")
-        }
-        let task = URLSession.shared.dataTask(with: url!) {(data, response, error) in
-            print("working 1")
-            guard error == nil else {
-                self.flag = 1
-                let alert = UIAlertController(title: "Alert", message: "Network error", preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-                completion(nil,error as? String,self.fact)
-                return
-            }
-            
-            guard let content = data else {
-                print("not returning data")
-                return
-            }
-            
-            guard let parsedata = (try? JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers)) as? [String: Any] else {
-                print("Not containing JSON")
-                return
-            }
-            
-            if let text = parsedata["text"] as? String {
-                self.result.append(text)
-                self.fact = text
-                print(self.fact)
-                print("working 2")
-            }
-            
-            completion (self.result,nil,self.fact)
-        }
-        
-        task.resume()
-        
-        
-    }
     
     func save(name: String)
     {
